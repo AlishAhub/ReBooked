@@ -1,0 +1,171 @@
+This is a **VERY good question** — and honestly, this is exactly what examiners expect you to understand in a **group project**.
+I’ll explain this **clearly + practically**, no jargon.
+
+---
+
+## 🧠 THE GOLDEN RULE (REMEMBER THIS)
+
+> **Everyone works on their OWN branch.
+> Only tested code goes to `main`.**
+
+If you follow the steps below, **conflicts will be rare** and easy to fix.
+
+---
+
+## 🏗️ PROPER GROUP WORKFLOW (STEP-BY-STEP)
+
+### 🔹 STEP 0: Decide ROLES (MOST IMPORTANT)
+
+Before writing code, decide this once:
+
+| Role            | Branch     | Work                      |
+| --------------- | ---------- | ------------------------- |
+| Team Lead (you) | `aelii`    | Auth, structure, Firebase |
+| Member 2        | `admin`    | Admin panel               |
+| Member 3        | `products` | Product UI & logic        |
+| Member 4        | `orders`   | Cart & orders             |
+
+👉 **No two people work on the same feature**
+
+---
+
+## 🔹 STEP 1: `main` = CLEAN BASE ONLY
+
+`main` branch should contain:
+
+* Angular project
+* Folder structure
+* Firebase config (if shared)
+* Common modules
+
+❌ No half-done features
+❌ No experiments
+
+---
+
+## 🔹 STEP 2: DAILY START RULE (EVERYONE)
+
+Every member must do this **before coding** 👇
+
+```bash
+git checkout their-branch
+git pull origin main
+```
+
+📌 This keeps their branch updated and prevents conflicts.
+
+---
+
+## 🔹 STEP 3: WORK ONLY INSIDE YOUR OWN FOLDER
+
+This avoids **file-level conflicts**.
+
+Example:
+
+* You → `auth/`, `services/`
+* Admin → `admin/`
+* Products → `user/products/`
+
+❌ Do NOT edit files someone else owns
+(except `app-routing.module.ts` — only you handle this)
+
+---
+
+## 🔹 STEP 4: SMALL COMMITS (VERY IMPORTANT)
+
+❌ Bad:
+
+```bash
+git commit -m "done project"
+```
+
+✅ Good:
+
+```bash
+git commit -m "Add login component UI"
+git commit -m "Connect Firebase auth service"
+```
+
+Small commits = easy merge.
+
+---
+
+## 🔹 STEP 5: PUSH → PULL REQUEST → MERGE
+
+When a feature is **working completely**:
+
+1. Push your branch
+2. Create **Pull Request → main**
+3. One person reviews (you)
+4. Merge
+
+❌ Never push directly to `main`
+
+---
+
+## 🔹 STEP 6: AFTER MERGE (EVERYONE)
+
+Once merged:
+
+```bash
+git checkout their-branch
+git pull origin main
+```
+
+This resets everyone to the same codebase.
+
+---
+
+## 🔥 REAL CONFLICT-FREE EXAMPLE
+
+You add:
+
+```
+auth/login.component.ts
+```
+
+Friend adds:
+
+```
+admin/dashboard.component.ts
+```
+
+👉 No conflict (different files)
+
+❌ Conflict happens when:
+
+* Two people edit same file
+* Same routing file
+* Same service
+
+So:
+✔ Only ONE person handles routing & shared services
+
+---
+
+## 🧠 VIVA-READY EXPLANATION (MEMORIZE THIS)
+
+> “We followed a feature-based branching strategy.
+> Each member worked on an isolated branch and merged tested features into the main branch using pull requests.”
+
+---
+
+## ✅ WHAT YOU SHOULD DO RIGHT NOW
+
+1. Finalize **feature ownership**
+2. Lock `main` branch (no direct pushes)
+3. You handle:
+
+   * Firebase
+   * Auth
+   * Routing
+
+---
+
+If you want, I can:
+
+* Draw a **branch flow diagram**
+* Give a **1-page Git workflow PDF**
+* Tell you **exact folder ownership rules**
+
+Just say the word 💙
