@@ -1,8 +1,18 @@
-<mat-toolbar color="primary">
-  <span>SmartCart</span>
-  <span class="spacer"></span>
+<header class="navbar">
+  <div class="nav-inner">
+    <div class="nav-left">
+      <img src="assets/images/logo.png" alt="ReBooked Logo" class="navbar-logo">
+      <span class="logo-text">ReBooked</span>
+    </div>
 
-  <button mat-button>Home</button>
-  <button mat-button>Products</button>
-  <button mat-button>Login</button>
-</mat-toolbar>
+    <div class="nav-center">
+      <a routerLink="/home" routerLinkActive="active">Home</a>
+      <a routerLink="/shop">Shop</a>
+      <a routerLink="/blog">Blog</a>
+    </div>
+
+    <div class="nav-right">
+      <a routerLink="/login" class="login-btn">Login</a>
+    </div>
+  </div>
+</header>

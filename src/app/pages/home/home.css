@@ -1,0 +1,41 @@
+.home {
+  padding: 40px;
+}
+
+.home h1 {
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 28px;
+}
+
+.book-card {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px);
+  border-radius: 22px;
+  padding: 16px;
+  cursor: pointer;
+
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.18);
+}
+
+.cover {
+  height: 200px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #fbcfe8, #ddd6fe);
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 500;
+}

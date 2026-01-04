@@ -1,8 +1,11 @@
 import { Routes } from '@angular/router';
+import { Login } from './auth/login/login';
+import { Register } from './auth/register/register';
+import { Home } from './pages/home/home';
 
-const routes: Routes = [
-  { path: '', component: LoginComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent }
+export const routes: Routes = [
+  { path: '', component: Home },
+  { path: 'login', component: Login },
+  { path: 'register', component: Register }
 ];
-export default routes;
+

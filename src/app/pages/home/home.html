@@ -1,0 +1,14 @@
+<div class="home">
+  <h1>Discover your next favorite book ✨</h1>
+
+  <div class="book-grid">
+    <div
+      class="book-card"
+      *ngFor="let book of [1,2,3,4,5,6]"
+      routerLink="/book/1"
+    >
+      <div class="cover"></div>
+      <p class="title">Book Title</p>
+    </div>
+  </div>
+</div>
