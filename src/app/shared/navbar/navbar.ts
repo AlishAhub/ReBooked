@@ -10,5 +10,10 @@ import { RouterModule } from '@angular/router';
   styleUrl: './navbar.css'
 })
 export class Navbar {
-  
+
+  isLoggedIn:boolean=true;
+
+  logout():void{
+    this.isLoggedIn=false;
+  }  
 }

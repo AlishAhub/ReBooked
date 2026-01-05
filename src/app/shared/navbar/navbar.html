@@ -5,14 +5,37 @@
       <span class="logo-text">ReBooked</span>
     </div>
 
+    <!-- CENTER: Primary Navbar Items (Always visible) -->
     <div class="nav-center">
       <a routerLink="/home" routerLinkActive="active">Home</a>
-      <a routerLink="/shop">Shop</a>
-      <a routerLink="/blog">Blog</a>
+      <a routerLink="/books" routerLinkActive="active">Browse Books</a>
+      <a routerLink="/about" routerLinkActive="active">About</a>
     </div>
 
-    <div class="nav-right">
+    <!-- RIGHT: Guest-only -->
+    <div class="nav-right" *ngIf="!isLoggedIn">
       <a routerLink="/login" class="login-btn">Login</a>
+      <a routerLink="/register" class="register-btn">Register</a>
     </div>
+
+    <!-- RIGHT: User-only -->
+    <div class="nav-right" *ngIf="isLoggedIn">
+      <a routerLink="/wishlist">Wishlist</a>
+      <a routerLink="/requests">My Requests</a>
+
+      <a routerLink="/add-book" class="add-book-btn">
+        + Add Book
+      </a>
+
+      <!-- Profile Dropdown -->
+      <div class="profile-dropdown">
+        <span class="profile-icon">👤</span>
+        <div class="dropdown-menu">
+          <a routerLink="/profile">Profile</a>
+          <a (click)="logout()">Logout</a>
+        </div>
+      </div>
+    </div>
+    
   </div>
 </header>

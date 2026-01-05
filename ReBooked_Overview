@@ -375,5 +375,99 @@ Perfect! I can turn your **Home Page plan** into a **paste-ready, self-explanato
 
 ---
 
+=====================================***NAVBAR***================================================
+Great question — this is exactly how you keep your UI **clean + aligned with your sitemap** 💯
+Based on the **pages you listed**, here’s a **paste-ready navbar plan** that instantly tells anyone *what appears in your navbar and why*.
 
+---
+
+## 🧭 ReBooked – Navbar Structure (Paste-Ready)
+
+### 🔹 **Primary Navbar Items (Always Visible)**
+
+| Navbar Item            | Links To               | Reason                                |
+| ---------------------- | ---------------------- | ------------------------------------- |
+| **Logo (ReBooked)**    | Home Page              | Standard UX, users expect logo → home |
+| **Home**               | Home Page              | Landing & discovery                   |
+| **Browse Books**       | Browse Books / Listing | Core feature of the platform          |
+| **About** *(optional)* | About Page             | Faculty-friendly + informational      |
+
+---
+
+### 🔹 **User-Only Navbar Items (Visible After Login)**
+
+| Navbar Item     | Links To                | Reason                  |
+| --------------- | ----------------------- | ----------------------- |
+| **Wishlist ❤️** | Wishlist Page           | Common user action      |
+| **My Requests** | My Requests / Exchanges | Track book requests     |
+| **Add Book ➕**  | Add / List Book         | Primary CTA for sellers |
+| **Profile 👤**  | Profile Page (dropdown) | User settings & history |
+
+**Profile Dropdown Contains:**
+
+* Profile
+* My Requests
+* Logout
+
+---
+
+### 🔹 **Admin-Only Navbar Items**
+
+| Navbar Item         | Links To        |
+| ------------------- | --------------- |
+| **Admin Dashboard** | Admin Dashboard |
+| **Manage Listings** | Manage Listings |
+| **Manage Users**    | Manage Users    |
+
+👉 Show these **only if role === admin**
+
+---
+
+### 🔹 **Right-Side Navbar Actions**
+
+| State             | Items                  |          |
+| ----------------- | ---------------------- | -------- |
+| **Not Logged In** | Login                  | Register |
+| **Logged In**     | User Avatar + Dropdown |          |
+
+---
+
+## 🧠 Recommended Navbar Layout (Clean & Student-Friendly)
+
+**Left:**
+`[ Logo ] ReBooked`
+
+**Center:**
+`Home | Browse Books | About`
+
+**Right (Logged Out):**
+`Login | Register`
+
+**Right (Logged In):**
+`Wishlist | My Requests | Add Book | 👤`
+
+---
+
+## 💡 UX Notes (Important)
+
+* ❌ Don’t overload the navbar
+* ✅ Keep **Browse Books** always visible
+* ✅ Make **Add Book** stand out (button style)
+* ✅ Admin links should NOT be visible to normal users
+
+---
+
+### 🎓 One-Line Explanation (Faculty-Safe)
+
+> *“The navbar provides role-based navigation, showing different options for guests, users, and admins to ensure a clean and secure user experience.”*
+
+---
+
+If you want next, I can:
+
+* 🎨 Suggest **exact icons + button styles**
+* 🧩 Give you **Angular HTML for role-based navbar**
+* 📱 Make it **mobile-responsive (hamburger menu)**
+
+Just tell me what you want next 💗
 
