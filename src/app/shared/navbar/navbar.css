@@ -70,6 +70,18 @@
   width: 100%;
 }
 
+.nav-right a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-right a:hover {
+  color: #c084fc;
+}
+
+
 /* LOGIN BUTTON */
 .login-btn {
   padding: 9px 22px;
@@ -80,4 +92,73 @@
   background: linear-gradient(135deg, #c084fc, #f472b6);
   color: white;
 }
+
+.register-btn {
+  padding: 8px 20px;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(135deg, #c084fc, #f472b6) border-box;
+  text-decoration: none;
+  font-weight: 500;
+  color: #c084fc;
+}
+
+.add-book-btn {
+  padding: 8px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 500;
+
+  background: rgba(192, 132, 252, 0.15);
+  color: #7c3aed;
+  transition: 0.3s;
+}
+
+.add-book-btn:hover {
+  background: linear-gradient(135deg, #c084fc, #f472b6);
+  color: white;
+}
+
+.profile-dropdown {
+  position: relative;
+}
+
+.profile-icon {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 36px;
+  right: 0;
+  min-width: 150px;
+
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+
+  display: none;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+.profile-dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-menu a {
+  padding: 10px 18px;
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+
+.dropdown-menu a:hover {
+  background: rgba(192, 132, 252, 0.12);
+}
+
  
