@@ -1,0 +1,9 @@
+<div class="book-card" [routerLink]="['/book', bookId]">
+  <img [src]="image" alt="Book cover" />
+
+  <div class="book-info">
+    <h3>{{ title }}</h3>
+    <p class="author">{{ author }}</p>
+    <span class="badge">{{ condition }}</span>
+  </div>
+</div>

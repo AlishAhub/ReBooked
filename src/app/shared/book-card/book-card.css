@@ -1,0 +1,73 @@
+/* Container card */
+.book-card {
+  display: flex;
+  flex-direction: column;
+  width: 180px; /* adjust as needed */
+  border-radius: 15px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1); /* semi-transparent glass effect */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  margin: 10px;
+}
+
+/* Hover effect */
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Book image */
+.book-card img {
+  width: 100%;
+  height: 220px; /* adjust for your image ratio */
+  object-fit: cover;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Book info container */
+.book-info {
+  padding: 10px;
+}
+
+/* Title */
+.book-info h3 {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Author */
+.book-info .author {
+  font-size: 0.85rem;
+  color: #dcdcdc;
+  margin-bottom: 10px;
+}
+
+/* Badge styling */
+.book-info .badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+/* Conditional badge colors */
+.book-info .badge.good {
+  background-color: #4caf50; /* green */
+}
+
+.book-info .badge.fair {
+  background-color: #ff9800; /* orange */
+}
+
+.book-info .badge.poor {
+  background-color: #f44336; /* red */
+}

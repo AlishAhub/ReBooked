@@ -471,3 +471,237 @@ If you want next, I can:
 
 Just tell me what you want next 💗
 
+===========================Book info page====================
+
+YES. Perfect choice.
+Now let’s **design the Book Details page UI** so it clearly matches your inspo **and** fits ReBooked (Angular-friendly, faculty-safe, reusable).
+
+I’ll keep this **visual + structured**, not code-heavy yet.
+
+---
+
+# 📘 ReBooked – Book Details Page UI Design (Inspired by Your Image)
+
+## 🎯 Overall Layout (Very Important)
+
+**Same base you already decided:**
+
+```
+Gradient Background (full screen)
+└── Glass App Shell (centered)
+    ├── Navbar
+    ├── Book Hero Section
+    └── Related Books Section
+```
+
+❌ No sidebar
+❌ No clutter
+✅ Calm, premium, student-friendly
+
+---
+
+## 🖼️ 1️⃣ Background (Like the Inspo)
+
+**Style**
+
+* Soft pastel gradient
+* Pink + lavender + light blue tones
+* No harsh contrast
+
+**Feel**
+
+* Cozy
+* Study-friendly
+* Slightly “storybook” vibe
+
+👉 This stays **global** for the app.
+
+---
+
+## 🧊 2️⃣ Glass App Shell (Core Card)
+
+**Shape**
+
+* Big rounded corners (24–32px)
+* Soft shadow
+* Transparent glass look
+
+**Purpose**
+
+* This is your “book desk”
+* Everything lives inside this
+
+**Visual**
+
+* White but translucent
+* Background slightly visible through it
+
+---
+
+## 📌 3️⃣ Navbar (Inside the Glass)
+
+**Left**
+
+* Logo: *ReBooked*
+
+**Center**
+
+* Home | Browse Books | About
+
+**Right**
+
+* Wishlist ❤️
+* My Requests
+* Add Book ➕
+* Profile avatar
+
+🔑 Navbar **does NOT have its own background**
+It floats inside the glass container.
+
+---
+
+## 📖 4️⃣ Book Hero Section (MOST IMPORTANT)
+
+This mirrors your inspo almost exactly.
+
+### 🔹 Layout: Two columns
+
+```
+[ Book Info ]        [ Book Image ]
+```
+
+---
+
+### ✏️ Left Column — Book Information
+
+**Top**
+
+* Book Title (bold, large)
+* Author (lighter text)
+
+**Below**
+
+* Small pill tags:
+
+  * Category (e.g., Computer Science)
+  * Condition (Good)
+  * Exchange Type (Sell / Exchange / Donate)
+
+**Description**
+
+* 3–4 lines max
+* Soft readable font
+* Not cramped
+
+**Meta Info**
+
+* College / Location
+* Year / Edition
+
+---
+
+### 🔘 Action Buttons (Key UX Moment)
+
+**Primary Button**
+
+* `Request Book` (rounded, solid)
+
+**Secondary**
+
+* `Add to Wishlist ❤️` (outline / soft)
+
+Rules:
+
+* If user = owner → disable Request
+* If book = donated → hide price
+
+---
+
+### 📸 Right Column — Book Image
+
+**Style**
+
+* Slightly floating card
+* Rounded corners
+* Soft shadow underneath
+
+**Behavior**
+
+* No harsh borders
+* Image should feel like it’s “placed” on the glass
+
+Optional later:
+
+* Hover → slight lift animation
+
+---
+
+## ⭐ 5️⃣ Reviews & Ratings Section
+
+Placed **below the hero**, inside same glass shell.
+
+**Left**
+
+* Average rating (⭐ 4.5)
+* Total reviews count
+
+**Right**
+
+* Short student reviews
+* Clean, minimal
+
+👉 This makes faculty VERY happy.
+
+---
+
+## 📚 6️⃣ “You May Also Like” Section
+
+Exactly like your inspo 👇
+
+**Style**
+
+* Horizontal scroll
+* Small book cards
+* Same card design as home
+
+**Logic**
+
+* Same category
+* Same college
+* Recently added
+
+---
+
+## 🎨 Color & Vibe Rules (IMPORTANT)
+
+* ❌ No pure white sections
+* ❌ No harsh black text
+* ✅ Soft dark gray text
+* ✅ Pink / lavender accents
+* ✅ Consistent rounded corners everywhere
+
+This keeps the UI **cohesive**.
+
+---
+
+## 🧠 Why this design is PERFECT for your project
+
+* Matches your **inspo**
+* Scales easily to Home & Browse
+* Easy to convert into Angular components
+* Looks **final-year worthy**
+* Faculty sees: UI + logic + structure
+
+---
+
+## 🔜 What should we do NEXT (your choice)
+
+Reply with **one**:
+
+1️⃣ **“Give me a wireframe-style layout (section-by-section)”**
+2️⃣ **“Convert this into Angular components (book-details.component, etc.)”**
+3️⃣ **“Give me exact spacing, font sizes & UI rules”**
+4️⃣ **“Now give me HTML + CSS to start building”**
+
+You’re officially past the *confused phase* now 🌸
+

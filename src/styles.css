@@ -8,21 +8,42 @@
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: 'Poppins', sans-serif;
-
   background: linear-gradient(
     135deg,
-    #fde7f3,
-    #e9d5ff,
-    #fde68a
+    #f6c1cc,
+    #d6c8f5,
+    #c6e3f9
   );
+  font-family: 'Inter', sans-serif;
 }
 
-.app-shell{
-    width:100%;
-    /* max-width:1400px; */
-    height:100vh;
-    background-color:rgba(255,255,255,0.35);
-    backdrop-filter:blur(18px);
-    -webkit-backdrop-filter:blur(18px);
+
+
+/* body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+
+  background:
+    radial-gradient(circle at 20% 30%, rgba(253, 230, 243, 0.8), transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(221, 214, 254, 0.8), transparent 45%);
+
+  filter: blur(80px);
+} */
+
+.app-shell {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 32px;
+  border-radius: 28px;
+
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
 }
+
+
+
